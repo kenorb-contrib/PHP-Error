@@ -3288,7 +3288,7 @@
                     }
 
                     h1 {
-                        font-size: 32px;
+                        font-size: 24px;
                         margin-bottom: 0;
                     }
                     h2 {
@@ -3405,17 +3405,22 @@
                         height: 100%;
                     }
                     #error-back {
-                        font-size: 240px;
+                        font-size: 120px;
                         color: #211600;
                         position: absolute;
-                        top: 60px;
-                        right: -80px;
+                        top: 20px;
+                        left: 60%;
 
-                        -webkit-transform: rotate( 24deg );
-                           -moz-transform: rotate( 24deg );
-                            -ms-transform: rotate( 24deg );
-                             -o-transform: rotate( 24deg );
-                                transform: rotate( 24deg );
+                        -webkit-transform: rotate( -14deg );
+                           -moz-transform: rotate( -14deg );
+                            -ms-transform: rotate( -14deg );
+                             -o-transform: rotate( -14deg );
+                                transform: rotate( -14deg );
+                 -webkit-transform-origin: right top;
+                    -moz-transform-origin: right top;
+                     -ms-transform-origin: right top;
+                      -o-transform-origin: right top;
+                         transform-origin: right top;
                     }
                     <?php
                     /*
@@ -3434,6 +3439,10 @@
                     #ajax-info,
                     #error-file-root {
                         color: #666;
+                        font-size: 18px;
+                    }
+                    #error-filename {
+                    #   font-size: 18px;
                     }
                     #error-files {
                         line-height: 0;
@@ -3530,7 +3539,7 @@
                         width: 100%;
                     }
                     #error-stack-trace {
-                        line-height: 28px;
+                        line-height: 1.5em;
                         cursor: pointer;
                     }
                         .error-stack-trace-exception {
@@ -3580,11 +3589,14 @@
                             }
                             .error-stack-trace-line > .file-internal-php,
                             .error-stack-trace-line > .filename {
+                                font-size: 16px;
                             }
                             .error-stack-trace-line > .lineinfo {
                                 padding-right:18px;
                                 padding-left: 82px;
                                 text-indent: -64px;
+                                line-height: 1.5em;
+                                font-size: 16px;
                             }
                     <?php
                     /*
@@ -3607,6 +3619,8 @@
 
                             padding: 0 32px 24px 12px;
                             max-width: 100%;
+                            font-size: 14px;
+                            line-height: 1.1em;
                         }
                         .error_dump.dump_request {
                             clear: left;
